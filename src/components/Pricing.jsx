@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 const Pricing = () => {
   const pricing = [
     {
@@ -36,7 +37,23 @@ const Pricing = () => {
               <p>For {element.length} Months</p>
             </div>
             <div className="description">
-            </div>
+                <p>
+                  <Check /> Equipment
+                </p>
+                <p>
+                  <Check /> All Day Fre Training
+                </p>
+                <p>
+                  <Check /> Free Restroom
+                </p>
+                <p>
+                  <Check /> 24/7 Skilled Support
+                </p>
+                <p>
+                  <Check /> 20 Days Freezing Option
+                </p>
+                <Link to={"/"}>Join Now</Link>
+              </div>
           </div>
         );
       })}
